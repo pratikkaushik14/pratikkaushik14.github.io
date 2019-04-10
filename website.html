@@ -1,0 +1,87 @@
+<html>
+<head>
+	<title>Contact Us</title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133415016-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-133415016-3');
+</script>
+
+<style>
+body {
+	font-family: Arial;
+}
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ff9090;
+  border-radius: 10px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+ }
+
+input[type=submit] {
+  background-color: #ff2424;
+  color: white;
+  padding: 12px 20px;
+  border-color: #ffffd8;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #00ff00;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #0f90b6;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<center><h2>Contact Us</h2></center>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Enter your first name">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Enter your last name">
+   
+    <label for="country">Country</label>
+    <select id="country" name="country">
+    	<option value="none">Select</option>
+      <option value="India">India</option>
+      <option value="USA">South America</option>
+      <option value="UK">England</option>
+      <option value="EUROPE">Paris</option>
+    </select>
+   
+    <label for="age">Age</label>
+    <select id="age" name="country">
+    	<option value="none">Select</option>
+      <option value="16">16-20</option>
+      <option value="21">21-26</option>
+      <option value="27">27-32</option>
+      <option value="33">Above 33 years</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="State your query or problem here" style="height:200px"></textarea>
+
+    <center><input type="submit" value="Contact Me Please"></center>
+  </form>
+</div>
+
+</body>
+</html>
